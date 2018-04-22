@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
+
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA==" crossorigin="anonymous"></script>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+  </head>
+  <body>
+    <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+        Plataforma Ing. Mauricio Duque MSc.
+      </nav>
+    </div>
+
+    <div class="grid-x">
+      <div class="cell small-3">
+        
+      </div>
+      <div class="cell small-6">
+        <table>
+          <tr>
+            <th>Clase</th>
+            <th>Codigo</th>
+            <th>Paralelo</th>
+            <th>Subir archivo</th>
+          </tr>
+          <tr>
+            <td>Laboratorio de Sistemas digitales</td>
+            <td>TET317L</td>
+            <td>CPR2</td>
+            <td><input type="file" id="fileInput_TET317L_CPR2"></input></td>
+          </tr>
+          <tr>
+            <td>Laboratorio de circuitos logicos</td>
+            <td>TEM425L</td>
+            <td>CPR1</td>
+            <td><input type="file" id="fileInput_TEM425L_CPR1"></input></td>
+          </tr>
+          <tr>
+            <td>Laboratorio de circuitos logicos</td>
+            <td>TEM425L</td>
+            <td>CPR2</td>
+            <td><input type="file" id="fileInput_TEM425L_CPR2"></input></td>
+          </tr>
+          <tr>
+            <td>Laboratorio de electronica general</td>
+            <td>TEM315L</td>
+            <td>CPR1</td>
+            <td><input type="file" id="fileInput_TEM315L_CPR1"></input></td>
+          </tr>
+          <tr>
+            <td>Laboratorio de electronica general</td>
+            <td>TEM315L</td>
+            <td>CPR2</td>
+            <td><input type="file" id="fileInput_TEM315L_CPR2"></input></td>
+          </tr>
+          <tr>
+            <td>Laboratorio de electricidad I</td>
+            <td>TEM212</td>
+            <td>GR2</td>
+            <td><input type="file" id="fileInput_TEM212_GR2"></input></td>
+          </tr>
+          <tr>
+            <td>Laboratorio de electricidad I</td>
+            <td>TEM212</td>
+            <td>GR4</td>
+            <td><input type="file" id="fileInput_TEM212_GR4"></input></td>
+          </tr>
+          <tr>
+            <td>Instalaciones electricas</td>
+            <td>TET412</td>
+            <td>GR2</td>
+            <td><input type="file" id="fileInput_TET412_GR2"></input></td>
+          </tr>
+        </table>
+      </div>
+      <div class="cell small-3"></div>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
