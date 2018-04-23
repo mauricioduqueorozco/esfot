@@ -7,12 +7,25 @@ const formidable = require('formidable')
 const util = require('util')
 const os = require('os')
 const fs = require('fs')
+const zipFolder = require('zip-folder')
 
 const router = course()
 const mount = st({
   path: path.join(__dirname, '..', 'public'),
   index: 'index.html',
   passthrough: true
+})
+
+router.get('/getFiles', function(req, res){
+  zipFolder('./FILES_UPLOADED', './archiveToDownolad.zip', function(err) {
+      if(err) res.send("Error")
+      else {
+        fs.readFile('archiveToDownolad.zip', function(err, data) {
+          res.setHeader('Content-Type', 'application/zip')
+          res.end(data)
+        })
+      }
+  })
 })
 
 router.post('/TET317L_CPR2', function (req, res) {
